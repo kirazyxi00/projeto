@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Perfil</title>
+</head>
+<body>
+
+    <h1>Minha Biblioteca de Mídias</h1>
+
+    <form action="processa_perfil.php" method="post">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <label for="turma">Turma:</label>
+        <input type="text" id="turma" name="turma" required>
+        <br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="10" max="100" required>
+        <br><br>
+
+        <label for="tipo_midia">Tipo de mídia favorita:</label>
+        <select id="tipo_midia" name="tipo_midia" required>
+            <option value="">Selecione</option>
+            <option value="Filme">Filme</option>
+            <option value="Anime">Anime</option>
+            <option value="Jogo">Jogo</option>
+            <option value="Livro">Livro</option>
+            <option value="Serie">Serie</option>
+        </select>
+        <br><br>
+
+        <label for="obra">Obra favorita:</label>
+        <input type="text" id="obra" name="obra" required>
+        <br><br>
+
+        <label for="nota">Nota de 0 a 10:</label>
+        <input type="number" id="nota" name="nota" min="0" max="10" required>
+        <br><br>
+
+        <label for="comentario">Comentario:</label>
+        <br>
+        <textarea id="comentario" name="comentario" required></textarea>
+        <br><br>
+
+        <button type="submit">Criar perfil</button>
+
+    </form>
+
+</body>
+</html>
