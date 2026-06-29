@@ -13,6 +13,7 @@ $turma = trim($_POST["turma"]);
 $idade = $_POST["idade"];
 $tipoMidia = $_POST["tipo_midia"];
 $obra = trim($_POST["obra"]);
+$cantor = trim($_POST["cantor"]);
 $nota = $_POST["nota"];
 $comentario = trim($_POST["comentario"]);
 
@@ -23,7 +24,13 @@ if ($erro == false) {
     echo "<p><strong>Turma:</strong> $turma</p>";
     echo "<p><strong>Idade:</strong> $idade anos</p>";
     echo "<p><strong>Tipo de midia favorita:</strong> $tipoMidia</p>";
-    echo "<p><strong>Obra favorita:</strong> $obra</p>";
+    if($cantor == ""){
+        echo "<p><strong>Música favorita:</strong> $obra</p>";
+    } else {
+        echo "<p><strong>Cantor favorita:</strong> $cantor</p>";
+        echo "<p><strong>Obra favorita:</strong> $obra</p>";
+    }
+
     echo "<p><strong>Nota:</strong> $nota/10</p>";
     echo "<p><strong>Comentario:</strong> $comentario</p>";
 
@@ -36,6 +43,9 @@ if ($erro == false) {
 } else {
     echo "<p>Volte ao formulario e corrija as informações.</p>";
 }
+
+
+
 
 ?>
 
