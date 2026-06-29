@@ -39,7 +39,7 @@ if ($erro == false) {
 
 ?>
 
-<p><a href="perfil.html">Voltar ao formulario</a></P>
+<p><a href="perfil.html">Voltar ao formulario</a></p>
 
 </body>
 </html>
