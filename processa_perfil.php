@@ -34,7 +34,7 @@ if ($erro == false) {
     }
 
 } else {
-    echo "<p>Volte ao formulario e corrija as informacoes.</p>";
+    echo "<p>Volte ao formulario e corrija as informações.</p>";
 }
 
 ?>
